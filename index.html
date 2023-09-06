@@ -8,20 +8,20 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     
-<script src = blippar-webar-sdk.....
+<script src = "sdk/blippar-webar-sdk-v1.6.1/webar-sdk/webar-sdk-v1.6.1.min.js?license-key=0499092a-6a68-4fc4-b398-1c5f5b1219c5"
 webar-mode="surface-tracking"
 static-camera = "true"
 auto-start="false"
 auto-init="false"
-render-scene-on-desktop= "false"
-show-qr-card-on-desktop= "false"
+render-scene-on-desktop="true"
+show-qr-card-on-desktop="false"
 
 enable-tracking-on-desktop= "false"
 enable-mirroring-on-desktop= "false"
 auto-marker-detection ="true"
 show-guide-animation-url=""
 rendering-engine="unity"
-logo-src="images/blippar_logo.png"
+logo-src="images/LogoTest.png"
 logo-height="200px"
 logo-width="200px"
 loading-progress-type="default"
@@ -86,7 +86,7 @@ scan-btn-progress-circle-cx-coordinate="50%"
 scan-btn-progress-circle-cy-coordinate="50%"
 scan-btn-progress-circle-radius="35"
 scan-btn-progress-circle-style="fill: none; stroke: cyan; stroke-width: 6;"
-ios-camera-permission= "false"
+ios-camera-permission="true"
 auto-scan-instruction-idle-on-desktop="Reload to detect a marker"
 
 show-guide-view="true"></script>
@@ -100,8 +100,8 @@ show-guide-view="true"></script>
 
 var Yrotvalue = undefined;
 var UNITYINSTANCE = undefined;
-const cameraObjectName = "";
-const stageObjectName = "";
+const cameraObjectName = "webarCamera";
+const stageObjectName = "webarStage";
       const buildUrl = "Build";
       const loaderUrl = buildUrl + "/WebAR-TuborgElfWebAR.loader.js";
       const config = {
